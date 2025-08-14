@@ -1,12 +1,18 @@
-# React + Vite
+# TO_DO_LIST WITH REDUX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installations
+1) React + Vite
+    `npm create vite@latest`
+    https://vite.dev/guide/
 
-Currently, two official plugins are available:
+2) React Router
+    `npm i react-router`
+    https://reactrouter.com/start/declarative/installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Tutorial: https://www.w3schools.com/react/react_router.asp
 
-## Expanding the ESLint configuration
+3) Redux
+    `npm i redux`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4) Redux Thunk
+    `npm install redux-thunk`
