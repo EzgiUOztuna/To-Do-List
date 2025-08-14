@@ -16,3 +16,21 @@
 
 4) Redux Thunk
     `npm install redux-thunk`
+
+5) Tailwind CSS
+    `npm install tailwindcss @tailwindcss/vite` ...
+    https://tailwindcss.com/docs/installation/using-vite
+
+6) Axios
+    `npm install axios`
+    https://axios-http.com/docs/intro
+
+
+
+
+
+
+
+
+
+* 📍 https://react.dev/reference/react-dom/components/input (react input)
