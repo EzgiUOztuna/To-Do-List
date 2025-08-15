@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@layer components {
+    .borders-text {
+        @apply border-1 rounded-[5px] border-[#D9DCE1];
+    }
+
+    .button-act {
+        @apply border-1 rounded-[5px] border-[#D9DCE1] px-2 py-1 text-[#bfc2c8] font-light cursor-pointer;
+    }
+}
