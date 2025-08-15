@@ -34,3 +34,4 @@
 
 
 * 📍 https://react.dev/reference/react-dom/components/input (react input)
+* 📍 https://v1.tailwindcss.com/docs/placeholder-color (changing placeholder color in tailwind)
