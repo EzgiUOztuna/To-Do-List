@@ -31,11 +31,11 @@ export default function ToDoList() {
                         <div key={task.id} className="borders-text1 flex justify-between items-center gap-10 px-4">
                             <p className="w-[20rem] flex-wrap py-3 text-[#404141]">{task.title}</p>
                             <div className="flex gap-2 py-2.5">
-                                <button className="button-act"
+                                <button className="button-act hover:bg-amber-500"
                                     type="button">In Progress</button> {/*tıklanınca turuncu olacak */}
-                                <button className="button-act"
+                                <button className="button-act hover:bg-green-600"
                                     type="button">Complete</button> {/*tıklanınca yeşil olacak yanıp sönecek ve en aşağıya gidecek */}
-                                <button className="button-act"
+                                <button className="button-act hover:bg-red-600"
                                     type="button">Delete</button> {/*tıklanınca kırmızı olup yanıp sönecek ve listeden de silinecek*/}
                             </div>
                         </div>
