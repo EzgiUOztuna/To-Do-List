@@ -1,4 +1,14 @@
+import axios from "axios"
+import { useEffect, useState } from "react";
 export default function ToDoList() {
+
+    const [tasks, setTasks] = useState([]);
+
+    useEffect(() => {
+        axios.get(`https://68a2c82bc5a31eb7bb1dc243.mockapi.io/api/v1/tasks`)
+            .then(response => setTasks(response.data))
+            .catch(error => console.error(error))
+    }, []);
 
 
 
@@ -15,19 +25,25 @@ export default function ToDoList() {
                         type="button">Add</button>
                 </div>
 
-                <div className="flex">
-                    <div className="flex justify-between items-center gap-10 borders-text px-4">
-                        <p className="w-[20rem] flex-wrap py-3 text-[#404141]">Task To Do Task To Do Task To Do Task To Do</p>
-                        <div className="flex gap-2 py-2.5">
-                            <button className="button-act"
-                                type="button">In Progress</button> {/*tıklanınca turuncu olacak */}
-                            <button className="button-act"
-                                type="button">Complete</button> {/*tıklanınca yeşil olacak yanıp sönecek ve en aşağıya gidecek */}
-                            <button className="button-act"
-                                type="button">Delete</button> {/*tıklanınca kırmızı olup yanıp sönecek ve listeden de silinecek*/}
+                <div className="flex flex-col">
+                    {tasks.map(task => (
+                        <div key={task.id} className="flex justify-between items-center gap-10 borders-text px-4">
+                            <p className="w-[20rem] flex-wrap py-3 text-[#404141]">{task.title}</p>
+                            <div className="flex gap-2 py-2.5">
+                                <button className="button-act"
+                                    type="button">In Progress</button> {/*tıklanınca turuncu olacak */}
+                                <button className="button-act"
+                                    type="button">Complete</button> {/*tıklanınca yeşil olacak yanıp sönecek ve en aşağıya gidecek */}
+                                <button className="button-act"
+                                    type="button">Delete</button> {/*tıklanınca kırmızı olup yanıp sönecek ve listeden de silinecek*/}
+                            </div>
                         </div>
+                    ))
+                    }
 
-                    </div>
+
+
+
                 </div>
             </div>
         </>
