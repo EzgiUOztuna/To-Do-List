@@ -8,4 +8,8 @@
     .button-act {
         @apply border-1 rounded-[5px] border-[#D9DCE1] px-2 py-1 text-[#bfc2c8] font-light cursor-pointer;
     }
+
+    .borders-text1 {
+        @apply border-t-1 border-x-1 last:border-1 last:rounded-b-[5px] first:rounded-t-[5px] border-[#D9DCE1];
+    }
 }
