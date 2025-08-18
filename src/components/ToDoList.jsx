@@ -25,9 +25,10 @@ export default function ToDoList() {
                         type="button">Add</button>
                 </div>
 
+
                 <div className="flex flex-col">
                     {tasks.map(task => (
-                        <div key={task.id} className="flex justify-between items-center gap-10 borders-text px-4">
+                        <div key={task.id} className="borders-text1 flex justify-between items-center gap-10 px-4">
                             <p className="w-[20rem] flex-wrap py-3 text-[#404141]">{task.title}</p>
                             <div className="flex gap-2 py-2.5">
                                 <button className="button-act"
