@@ -9,6 +9,6 @@ createRoot(document.getElementById('root')).render(
   <Provider store={myStore}>
     <BrowserRouter>
       <App />
-    </BrowserRouter>,
+    </BrowserRouter>
   </Provider>
 )
