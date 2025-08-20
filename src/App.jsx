@@ -1,8 +1,6 @@
-import { Routes } from "react-router"
 import ToDoList from "./components/toDoList"
 
 function App() {
-
 
   return (
     <>
