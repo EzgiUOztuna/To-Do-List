@@ -11,8 +11,8 @@
 
     Tutorial: https://www.w3schools.com/react/react_router.asp
 
-3) Redux
-    `npm i redux`
+3) React-Redux
+    `npm i react-redux` 
 
 4) Redux Thunk
     `npm install redux-thunk`
