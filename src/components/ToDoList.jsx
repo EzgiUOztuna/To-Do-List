@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
+
 export default function ToDoList() {
     const [tasks, setTasks] = useState([]);
 
@@ -12,6 +13,7 @@ export default function ToDoList() {
 
 
 
+
     return (
         <>
             <div className="flex flex-col mt-40 items-center text-[.9rem]">
@@ -20,8 +22,10 @@ export default function ToDoList() {
                     <input className="borders-text px-2 py-1 w-[36.5rem] placeholder-[#bfc2c8]  placeholder:font-light"
                         name="newTask"
                         placeholder="Add new task..." />
-                    <button className="border-1 rounded-[5px] px-2.5 py-1 bg-[#3675D3] border-[#3675D3] text-white hover:bg-sky-700 cursor-pointer"
-                        type="button">Add</button>
+                    <button
+                        type="button"
+                        className="border-1 rounded-[5px] px-2.5 py-1 bg-[#3675D3] border-[#3675D3] text-white hover:bg-sky-700 cursor-pointer"
+                    >Add</button>
                 </div>
 
 
