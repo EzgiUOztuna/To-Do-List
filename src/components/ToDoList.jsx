@@ -1,16 +1,14 @@
-import axios from "axios"
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setTask } from "../store/actions/toDoActions";
 
 export default function ToDoList() {
-    const [tasks, setTasks] = useState([]);
+    const dispatch = useDispatch();
+    const tasks = useSelector(state => state.toDos);
 
     useEffect(() => {
-        axios.get(`https://68a2c82bc5a31eb7bb1dc243.mockapi.io/api/v1/tasks`)
-            .then(response => setTasks(response.data))
-            .catch(error => console.error(error))
-    }, []);
-
-
+        dispatch(setTask());
+    }, [dispatch]);
 
 
 
@@ -30,8 +28,8 @@ export default function ToDoList() {
 
 
                 <div className="flex flex-col">
-                    {tasks.map(task => (
-                        <div key={task.id} className="borders-text1 flex justify-between items-center gap-10 px-4">
+                    {tasks.map((task, index) => (
+                        <div key={index} className="borders-text1 flex justify-between items-center gap-10 px-4">
                             <p className="w-[20rem] flex-wrap py-3 text-[#404141]">{task.title}</p>
                             <div className="flex gap-2 py-2.5">
                                 <button className="button-act hover:bg-amber-500"
